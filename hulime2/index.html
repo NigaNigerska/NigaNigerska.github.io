@@ -9,23 +9,17 @@
             margin: 0;
             overflow: hidden;
             background: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
         }
-        iframe {
+        video {
             width: 100vw;
             height: 100vh;
-            border: none;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <iframe 
-        src="https://www.youtube.com/embed/MgFC_hYib2c?autoplay=1&loop=1&playlist=MgFC_hYib2c" 
-        allow="autoplay; encrypted-media" 
-        allowfullscreen>
-    </iframe>
+    <video autoplay loop name="media">
+        <source src="https://gemootest.s3.us-east-2.amazonaws.com/s/res/514885813225336832/2e04cdda1c17793978519d09c886a532.mp4?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARLZICB6QQHKRCV7K%2F20250317%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20250317T183308Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=ef46442f747864c8993f5165deee51888eb6fac4268b757830117a1ea5fe6823" type="video/mp4">
+    </video>
 </body>
 </html>
