@@ -26,9 +26,23 @@
     </style>
 </head>
 <body>
-    <video autoplay loop name="media">
+    <video id="video1" autoplay name="media">
+        <source src="https://github.com/NigaNigerska/NigaNigerska.github.io/raw/refs/heads/main/vecernicek.mp4" type="video/mp4">
+    </video>
+    <video id="video2" style="display: none;">
         <source src="https://github.com/NigaNigerska/NigaNigerska.github.io/raw/refs/heads/main/pejsekkocicka.mp4" type="video/mp4">
     </video>
     <img src="https://i.ibb.co/vvxMj4Jd/poupravenejac.png" alt="LOL" class="overlay-image">
+
+    <script>
+        const video1 = document.getElementById('video1');
+        const video2 = document.getElementById('video2');
+
+        video1.onended = function() {
+            video1.style.display = 'none';
+            video2.style.display = 'block';
+            video2.play();
+        };
+    </script>
 </body>
 </html>
