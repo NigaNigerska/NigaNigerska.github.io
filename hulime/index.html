@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Háčci</title>
+    <title>Absolventi X Susano</title>
     <style>
         body {
             margin: 0;
@@ -15,12 +15,19 @@
             height: 100vh;
             object-fit: cover;
         }
-        .overlay-image {
+        .image {
+            position: absolute;
+            left: 50%;
+		transform: translateX(-50%);
+            top: 0%;
+            width: 500px;
+            height: auto;
+        }
+	  .image2 {
             position: absolute;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 500px;
+            top: 0%;
+            width: 300px;
             height: auto;
         }
     </style>
@@ -32,7 +39,8 @@
     <video id="video2" style="display: none;">
         <source src="https://github.com/NigaNigerska/NigaNigerska.github.io/raw/refs/heads/main/pejsekkocicka.mp4" type="video/mp4">
     </video>
-    <img src="https://i.ibb.co/Jwcy1mZj/image.png" alt="LOL" class="overlay-image">
+    <img src="https://i.ibb.co/1JnwNvQM/image.png" alt="LOL" class="image">
+    <img src="https://i.ibb.co/BVcHTSLN/image.png" alt="LOL" class="image2">
 
     <script>
         const video1 = document.getElementById('video1');
